@@ -95,3 +95,4 @@ discord-bot/
     ├── gerar-senha.js     # gera hash bcrypt pra senha do painel
     └── public/            # login.html, dashboard.html, app.js, style.css
 ```
+Alerta do dono: Toda atualização será primeira colocada aqui, depois será aplicada no bot geral.
