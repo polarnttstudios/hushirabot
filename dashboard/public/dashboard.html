@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Dashboard do Bot</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🤖 Painel do Bot</h1>
+    <button class="secondary" id="logoutBtn">Sair</button>
+  </header>
+
+  <main>
+    <div class="stats-grid" id="statsGrid"></div>
+
+    <div class="panel">
+      <h2>🔗 Webhooks</h2>
+      <p style="color:var(--muted);font-size:13px;margin-top:-8px">Cadastre webhooks do Discord e envie mensagens direto por aqui.</p>
+      <div class="row">
+        <input id="whName" placeholder="Nome (ex: Anúncios)" />
+        <input id="whUrl" placeholder="URL do webhook do Discord" style="flex:2" />
+        <button id="addWhBtn">Adicionar</button>
+      </div>
+      <table id="whTable">
+        <thead><tr><th>Nome</th><th>Mensagem</th><th></th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    </div>
+
+    <div class="panel">
+      <h2>📋 Últimas ações de moderação</h2>
+      <table id="modlogTable">
+        <thead><tr><th>Ação</th><th>Alvo</th><th>Moderador</th><th>Motivo</th><th>Quando</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>⚠️ Advertências recentes</h2>
+      <table id="warnsTable">
+        <thead><tr><th>Servidor</th><th>Usuário</th><th>Moderador</th><th>Motivo</th><th>Quando</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot-completo",
+  "version": "1.0.0",
+  "description": "Bot de Discord completo com moderação, comandos de dono, presave e dashboard web",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "dashboard": "node dashboard/server.js",
+    "dev": "concurrently \"node index.js\" \"node dashboard/server.js\""
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
