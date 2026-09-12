@@ -1,4 +1,4 @@
-# Bot de Discord Completo (Moderação + Anti-raid + Dashboard Web)
+# Bot de Discord hushira - COMPLETO! (Moderação + Anti-raid + Dashboard Web)
 
 Bot em Node.js com discord.js v14, banco SQLite e um painel web protegido por login.
 
